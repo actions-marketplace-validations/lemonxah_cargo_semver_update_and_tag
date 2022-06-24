@@ -12,9 +12,8 @@ runs:
   steps:
     - name: Checkout Source
       uses: actions/checkout@main
-    - uses: Docker
-      id: cargo
-      image: 'Dockerfile'
+    - name: Cargo Semver Update
+      uses: lemonxah/cargo_semver_update@v0.0.1
     - name: Verified commit
       uses: swinton/commit@v2.0.0
       env:
