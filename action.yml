@@ -17,7 +17,7 @@ runs:
     - name: Verified commit
       uses: swinton/commit@v2.0.0
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
       with:
         files: |
           Cargo.toml
@@ -26,10 +26,10 @@ runs:
     - name: Tag commit
       uses: tvdias/github-tagger@v0.0.1
       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        repo-token: "${{ github.token }}"
         tag: "${{ steps.cargo.outputs.new_version_with_v }}"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ github.token }}
         branch: ${{ github.ref }}
