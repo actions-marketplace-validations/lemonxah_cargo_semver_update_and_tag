@@ -14,7 +14,7 @@ runs:
     - name: Checkout Source
       uses: actions/checkout@main
     - name: Cargo Semver Update
-      uses: lemonxah/cargo_semver_update@v0.0.4
+      uses: lemonxah/cargo_semver_update@v0.0.5
     - name: Verified commit
       uses: swinton/commit@v2.0.0
       env:
