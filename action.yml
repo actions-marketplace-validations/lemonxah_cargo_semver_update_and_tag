@@ -1,5 +1,7 @@
-name: 'Cargo Semver Update'
-description: 'Update Cargo.toml version with Semver #major #minor #patch'
+name: 'Cargo Semver Update and Tag'
+icon: at-sign
+color: black
+description: 'Update Cargo.toml version with Semver #major #minor #patch, Then Tags and pushes the changes.'
 inputs:
 outputs:
   new_version:
