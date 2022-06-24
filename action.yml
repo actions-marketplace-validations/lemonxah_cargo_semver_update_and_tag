@@ -1,6 +1,6 @@
 name: 'Cargo Semver Update and Tag'
-icon: at-sign
-color: black
+Icon: 'at-sign'
+Color: 'black'
 description: 'Update Cargo.toml version with Semver #major #minor #patch, Then Tags and pushes the changes.'
 outputs:
   new_version:
@@ -13,7 +13,7 @@ runs:
     - name: Checkout Source
       uses: actions/checkout@main
     - name: Cargo Semver Update
-      uses: lemonxah/cargo_semver_update@v0.0.1
+      uses: lemonxah/cargo_semver_update@v0.0.2
     - name: Verified commit
       uses: swinton/commit@v2.0.0
       env:
