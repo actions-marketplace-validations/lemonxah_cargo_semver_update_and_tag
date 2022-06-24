@@ -21,7 +21,7 @@ runs:
       with:
         files: |
           Cargo.toml
-        commit-message: Cargo.toml semver changed to ${{ stes.cargo.outputs.new_version }}
+        commit-message: Cargo.toml semver changed to ${{ steps.cargo.outputs.new_version }}
         ref: refs/heads/my-branch
     - name: Tag commit
       uses: tvdias/github-tagger@v0.0.1
