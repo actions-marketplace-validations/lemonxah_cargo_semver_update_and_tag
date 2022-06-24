@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Cargo Semver Update and Tag
-        uses: lemonxah/cargo_semver_update_and_tag@v0.0.10
+        uses: lemonxah/cargo_semver_update_and_tag@v1.0.2
         with:
           GITHUB_TOKEN: ${{ github.token }}
 ```
