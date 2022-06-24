@@ -13,7 +13,7 @@ runs:
     - name: Checkout Source
       uses: actions/checkout@main
     - name: Cargo Semver Update
-      uses: lemonxah/cargo_semver_update@v0.0.2
+      uses: lemonxah/cargo_semver_update@v0.0.3
     - name: Verified commit
       uses: swinton/commit@v2.0.0
       env:
